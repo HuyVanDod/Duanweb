@@ -18,7 +18,7 @@
 						</ul>
 					</div>
 				</div>
-<!-- sssss -->
+
 				<div style="clear: both;"></div>
 
 				<div class="introduce-prd">
@@ -43,7 +43,7 @@
 								<td>Loại hình bảo hành</td><td><?php echo $data['loaibh'] ?></td>
 							</tr>
 							<tr>
-								<td>Kích thước (d x r x c) (cm)</td><td><?php echo $data['kichthuoc'] ?></td>
+								<td>Kích thước (d x r) (cm)</td><td><?php echo $data['kichthuoc'] ?></td>
 							</tr>
 							<tr>
 								<td>Màu</td><td><?php echo $data['mau'] ?></td>

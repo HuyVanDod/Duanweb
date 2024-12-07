@@ -1,5 +1,5 @@
 <div class='product-container' onclick="Display_PrdDetail('<?php echo $data[$i]['masp'] ?>')">
-	<a data-toggle='modal' href='product/PrdDetail/<?php echo $data[$i]['masp'] ?>' data-target='#modal-id'>
+	<a  href='product/PrdDetail/<?php echo $data[$i]['masp'] ?>'>
 		<div style="text-align: center;" class='product-img'>
 			<img src='<?php echo $data[$i]['anhchinh'] ?>'>
 		</div>

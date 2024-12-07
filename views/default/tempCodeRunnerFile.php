@@ -1,0 +1,2 @@
+<?php
+product/List/Newest

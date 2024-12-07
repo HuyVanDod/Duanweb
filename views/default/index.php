@@ -7,13 +7,13 @@
 			for ($j=0; $j < count($data[0]); $j++) {
 				if($i == 3){ ?>
 				<div class='item active'>
-					<a data-toggle='modal' href='product/PrdDetail/<?php echo $data[0][$i]['masp'] ?>' data-target='#modal-id' onclick="Display_PrdDetail('<?php echo $data[0][$i]['masp'] ?>')">
+					<a  href='product/PrdDetail/<?php echo $data[0][$i]['masp'] ?>'  onclick="Display_PrdDetail('<?php echo $data[0][$i]['masp'] ?>')">
 						<img src="<?php echo $data[0][$i]['anhchinh'] ?>">
 					</a>
 				</div>
 				<?php } else { ?>
 				<div class='item'>
-					<a data-toggle='modal' href='product/PrdDetail/<?php echo $data[0][$i]['masp'] ?>' data-target='#modal-id' onclick="Display_PrdDetail('<?php echo $data[0][$i]['masp'] ?>')">
+					<a href='product/PrdDetail/<?php echo $data[0][$i]['masp'] ?>' onclick="Display_PrdDetail('<?php echo $data[0][$i]['masp'] ?>')">
 						<img src="<?php echo $data[0][$i]['anhchinh'] ?>">
 					</a>
 				</div>
@@ -36,15 +36,15 @@
 				<?php
 				for ($i=0; $i < count($data[2]); $i++) { 
 					?>
-					<div class='product-container' onclick="Display_PrdDetail('<?php echo $data[2][$i]['masp'] ?>')">
-						<a data-toggle='modal' href='product/PrdDetail/<?php echo $data[2][$i]['masp'] ?>' data-target='#modal-id'>
+					<div class='product-container'>
+						<a  href='product/PrdDetail/<?php echo $data[2][$i]['masp'] ?>'>
 							<div style="text-align: center;" class='product-img'>
 								<img src='<?php echo $data[2][$i]['anhchinh'] ?>'>
 							</div>
 							<div class='product-info'>
 								<h4 style="font-size: 10px; color:aliceblue"><b><?php echo $data[2][$i]['tensp'] ?></b></h4>
 								<b class='price'>Giá: <?php echo $data[2][$i]['gia'] ?> VND</b>
-								<div class='buy'>
+								<div class='	buy'>
 									<a class='btn btn-primary btn-md cart-container 
 									<?php 
 									if(isset($_SESSION['cart'])){
@@ -73,13 +73,13 @@
 				<?php
 				for ($i=0; $i < count($data[1]); $i++) { 
 					?>
-					<div class='product-container' onclick="Display_PrdDetail('<?php echo $data[1][$i]['masp'] ?>')">
-						<a data-toggle='modal' href='product/PrdDetail/<?php echo $data[1][$i]['masp'] ?>' data-target='#modal-id'>
+					<div class='product-container'>
+						<a  href='product/PrdDetail/<?php echo $data[1][$i]['masp'] ?>'>
 							<div style="text-align: center;" class='product-img'>
 								<img src='<?php echo $data[1][$i]['anhchinh'] ?>'>
 							</div>
 							<div class='product-info'>
-								<h4><b><?php echo $data[1][$i]['tensp'] ?></b></h4>
+								<h4 style="font-size: 10px; color:aliceblue"><b><?php echo $data[1][$i]['tensp'] ?></b></h4>
 								<b class='price'>Giá: <?php echo $data[1][$i]['gia'] ?> VND</b>
 								<div class='buy'>
 									<a class='btn btn-primary btn-md cart-container 
