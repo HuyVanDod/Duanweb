@@ -6,6 +6,7 @@
 			<div class="col-sm-12">
 				<div class="main-prd">
 					<img src="<?php echo $data['anhchinh'] ?>" class="main-prd-img">
+					
 					<div class="basic-info">
 						<h2><?php echo $data['tensp'] ?></h2>
 						<span class="main-prd-price"><?php echo $data['gia'] ?> VND</span>
@@ -56,12 +57,13 @@
 							<tr>
 								<td>Tình trạng</td><td><?php echo $data['tinhtrang'] ?></td>
 							</tr>
+							<tr>
+								<td>Chi tiết sản phẩm</td><td><?php echo $data['thongtinchitiet'] ?></td>
+							</tr>
 						</tbody>
 					</table>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="modal-footer">
-		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-	</div>
+	
