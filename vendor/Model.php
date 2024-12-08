@@ -6,6 +6,7 @@
 class Model
 {
 	protected $conn;
+    protected $pdo;
 
 	function __construct()
 	{

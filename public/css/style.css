@@ -405,24 +405,54 @@ footer{
 	font-weight: bold;
 }
 
-.main-prd{
-	width: 100%;
-	position: relative;
+.main-prd {
+    display: flex; /* Sử dụng flexbox để sắp xếp các phần tử ngang hàng */
+    justify-content: space-between; /* Giãn cách các phần tử */
+    align-items: flex-start; /* Căn chỉnh các phần tử lên trên */
 }
-.main-prd-img{
-	width: 40%;
+
+.prd-images {
+    flex-basis: 40%; /* Phần này chiếm 40% chiều rộng */
 }
-.basic-info{
-	width: 59%;
-	float: right;
-	font-size: 16px;
-	padding: 10px;
+
+.main-prd-img {
+    width: 100%; /* Ảnh chính chiếm toàn bộ chiều rộng */
+    max-width: 500px; /* Đảm bảo ảnh chính không quá lớn */
+    margin-bottom: 10px;
 }
-.main-prd-price{
-	color: red;
-	font-size: 20px;
-	font-weight: bold;
+
+.thumbs {
+    display: flex;
+    justify-content: start;
+    margin-top: 10px;
 }
+
+.thumb-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.thumb-img:hover {
+    transform: scale(1.1); /* Phóng to ảnh khi hover */
+    border-color: #ff5733;
+}
+
+.basic-info {
+    flex-basis: 55%; /* Phần này chiếm 55% chiều rộng */
+    font-size: 16px;
+    padding: 10px;
+}
+
+.main-prd-price {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 
 
 .introduce-prd{

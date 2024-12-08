@@ -57,15 +57,24 @@ class ProductController extends Controller
 		}
 		$this->render('Products',$data, $title);
 	}
-	function PrdDetail($masp){
-
+	function PrdDetail($masp) {
 		require_once 'vendor/Model.php';
 		require_once 'models/default/productModel.php';
+		require_once 'models/default/imagesModel.php'; // Model images
+	
 		$md = new productModel;
 		$data = $md->getPrdById($masp);
-		
+	
+		// Lấy ảnh phụ từ bảng images dựa trên masp
+		$imagesModel = new imagesModel();
+		$additionalImages = $imagesModel->getImagesByProductId($masp);
+	
+		// Thêm ảnh phụ vào dữ liệu sản phẩm
+		$data['additionalImages'] = $additionalImages;
+	
 		$title = $data['tensp'];
 		$this->render('productDetail', $data);
-
 	}
+	
+	
 }
