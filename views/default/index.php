@@ -99,7 +99,44 @@
 					</a>
 				</div>
 				<?php } ?>
+				<a href="product/ListProduct/new/50/0">
+					<h2 title="Những sản phẩm mới nhất" class="content-menu">Danh sách sản phẩm
+						<span class="glyphicon glyphicon-menu-right" style="font-size: 18px"></span>
+					</h2>
+				</a>
+
+				<?php
+				for ($i=0; $i < count($data[1]); $i++) { 
+					?>
+					<div class='product-container'>
+						<a  href='product/PrdDetail/<?php echo $data[1][$i]['masp'] ?>'>
+							<div style="text-align: center;" class='product-img'>
+								<img src='<?php echo $data[1][$i]['anhchinh'] ?>'>
+							</div>
+							<div class='product-info'>
+								<h4 style="font-size: 10px; color:aliceblue"><b><?php echo $data[1][$i]['tensp'] ?></b></h4>
+								<b class='price'>Giá: <?php echo $data[1][$i]['gia'] ?> VND</b>
+								<div class='buy'>
+									<a class='btn btn-primary btn-md cart-container 
+									<?php
+									if(isset($_SESSION['cart'])){
+										if(array_search($data[1][$i]['masp'], $_SESSION['cart']) !== false){
+											echo 'cart-ordered';
+										}
+									}
+									 ?>' data-masp='<?php echo $data[1][$i]['masp'] ?>'>
+									<i title='Thêm vào giỏ hàng' class='glyphicon glyphicon-shopping-cart cart-item'></i>
+								</a>
+								<a href="client/buynow/<?php echo $data[1][$i]['masp'] ?>" class="snip0050" href='order.php?masp=<?php echo $data[1][$i]['masp'] ?>'><span>Mua ngay</span><i class="glyphicon glyphicon-ok"></i>
+								</a>
+							</div>
+						</div>
+					</a>
+				</div>
+				<?php } ?>
+				
 			</div>
+
 		</div>
 	</div>
 </div>

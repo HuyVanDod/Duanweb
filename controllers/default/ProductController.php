@@ -75,6 +75,31 @@ class ProductController extends Controller
 		$title = $data['tensp'];
 		$this->render('productDetail', $data);
 	}
+
+	public function ListProduct($type, $limit, $start)
+{
+    // Khởi tạo mảng rỗng để lưu danh sách sản phẩm
+    $list_product = [];
+    
+    // Đảm bảo nạp đúng Model và khởi tạo đối tượng productModel
+    require_once 'vendor/Model.php';
+    require_once 'models/default/productModel.php';
+    $md = new productModel;
+    
+    // Lấy dữ liệu sản phẩm từ Model
+    $list_product = $md->getProducts($type, $limit, $start);
+    
+    // Kiểm tra và in ra dữ liệu để xem có đúng không
+    
+    // Gán dữ liệu vào mảng $data
+    $data = [
+        "list_products" => $list_product
+    ];
+
+    // Render view và truyền dữ liệu
+    $this->render('listproduct', $data);
+}
+
 	
 	
 }

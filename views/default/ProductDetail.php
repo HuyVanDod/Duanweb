@@ -10,6 +10,7 @@
                     <img src="<?php echo $data['anhchinh']; ?>" class="main-prd-img" id="mainImage">
                     
                     <!-- Các ảnh phụ -->
+                  
                     <div class="thumbs">
                         <?php 
                         // Kiểm tra nếu có ảnh phụ
@@ -21,6 +22,9 @@
                         }
                         ?>
                     </div>
+
+
+                   
                 </div>
                 
                 <!-- Thông tin cơ bản -->

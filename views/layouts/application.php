@@ -5,7 +5,7 @@ if(isset($_COOKIE['user']) && !isset($_SESSION['user'])){
 ?>
 <html lang="en">
 <head>
-	<title> 9XWatch - Thể hiện sự lịch lãm của phái mạnh! </title>
+	<title> GundamF9 - Thế giới mô hình! </title>
 	<meta charset="utf-8">
 	<base href="/WBH_MVC/">
 	<!-- <link rel="SHORTCUT ICON"  href=> -->
@@ -26,7 +26,7 @@ if(isset($_COOKIE['user']) && !isset($_SESSION['user'])){
 </head>
 <body>
 	<header id='header'>
-		<a href=""><img src="public/images/logo.png"><h2 class="logo">9XWatch</h2></a>
+		<a href=""><img src="images\logo.png"><h2 class="logo">Gundam F9</h2></a>
 		<ul class="header-menu">
 			<?php
 			if((!isset($_SESSION['user']))){ ?>
@@ -63,7 +63,7 @@ if(isset($_COOKIE['user']) && !isset($_SESSION['user'])){
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand logo" href="">9XWatch</a>
+				<a class="navbar-brand logo" href="">GundamF9</a>
 				<div id="custom-search-input">
 					<div class="input-group col-md-12" style="background-color: white;">
 						<input type="text" class="form-control input-lg" placeholder="Bạn tìm gì?" id='src-v' />
@@ -97,6 +97,8 @@ if(isset($_COOKIE['user']) && !isset($_SESSION['user'])){
 					<li class="menu-name" id="dgg"><a href="product/List/OnSale">Đang giảm giá</a></li>
 					<li class="menu-name" id="spm"><a href="product/List/Newest">Sản phẩm mới</a></li>
 					<li class="menu-name" id="mntq"><a href="product/List/BestSelling">Mua nhiều tuần qua</a></li>
+					<li class="menu-name" id="list-product"><a href="product/ListProduct/new/50/0">Danh sách sản phẩm</a></li>
+
 
 				</ul>
 				<div style="cursor: pointer;"><a href="client/viewcart" style="color: yellow"><i class="glyphicon glyphicon-shopping-cart navbar-right btn-lg" id="cart_count"> 
@@ -139,7 +141,7 @@ if(isset($_COOKIE['user']) && !isset($_SESSION['user'])){
 					<h3>Contact</h3>
 					<i class="glyphicon glyphicon-map-marker"></i><span> Linh Trung, Thủ Đức, tp.HCM</span><br>
 					<i class="glyphicon glyphicon-earphone"></i><span> (08) 391 525</span><br>
-					<i class="glyphicon glyphicon-envelope"></i><span> 9XWatch@gmail.com</span><br>
+					<i class="glyphicon glyphicon-envelope"></i><span> GundamF9@gmail.com</span><br>
 					<h4 style="line-height: 26px">Nhận email thông báo của chúng tôi khi có sản phẩm mới hay giảm giá:</h4>
 					<form action="" method="POST" class="form-inline" role="form">
 						<div class="form-group">
@@ -150,7 +152,7 @@ if(isset($_COOKIE['user']) && !isset($_SESSION['user'])){
 					</form>
 				</div>
 				<div class="col-lg-12" id="copyright-txt">
-					<b>All right reverse, &#169; copyright of 9XWatch.com</b>
+					<b>All right reverse, &#169; copyright of GundamF9.com</b>
 				</div>
 			</div>
 		</div>
